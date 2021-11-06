@@ -61,8 +61,8 @@ var loadSongs = function(){
   client.sendRequest("GET", "songs", "", "", {}, false,
   function(data, type) {
     var arr = data.songs;
-var text = "";
-arr.forEach(function(item) {
+    var text = "";
+    arr.forEach(function(item) {
 text += item.title + ", "
 });
 document.getElementById("p").innerText = text; 
