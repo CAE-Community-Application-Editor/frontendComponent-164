@@ -63,9 +63,9 @@ var loadSongs = function(){
     var arr = data.songs;
     var text = "";
     arr.forEach(function(item) {
-text += item.title + ", "
-});
-document.getElementById("p").innerText = text; 
+        text += item.title + ", "
+    });
+    document.getElementById("p").innerText = text; 
     
   },
   function(error) {
